@@ -4,7 +4,7 @@ import { Link, } from 'react-router-dom'
 import { AuthContext } from '../context/Usercontext';
 const Register = () => {
 
-  const {createUser} = useContext(AuthContext)
+  const {createUser} = useContext(AuthContext);
 
   const handleSubmit = (e) => {
     
@@ -14,7 +14,7 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
     console.log(name, email, password);
-    
+
     createUser(email, password)
     .then(result => {
       console.log(result.user);
