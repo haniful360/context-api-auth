@@ -1,12 +1,9 @@
-import React, { useContext } from 'react';
-import { AuthContext } from '../context/Usercontext';
+import React from 'react';
 
 const Home = () => {
-    const abe = useContext(AuthContext);
-    console.log(abe);
     return (
         <div>
-            <h1>this is home {abe}</h1>
+            <h1>this is home</h1>
         </div>
     );
 };
